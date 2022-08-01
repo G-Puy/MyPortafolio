@@ -21,6 +21,8 @@
 html {
     width: 100% !important;
     height: 100% !important;
+    
+    
 }
 
 body {
@@ -30,7 +32,6 @@ body {
     /* background-color: transparent; */
     width: 100% !important;
     height: 100% !important;
-
 }
 
 
@@ -56,14 +57,16 @@ h2 {
 /* ============================================================== */
 header {
     padding-left: 0 !important;
-    position: fixed;
-
+    
+   
 }
 
 #ulNav {
     padding-left: 0.5rem;
     margin-top: 1rem;
     gap: 0.3rem;
+   
+   
 
 
 }
@@ -127,6 +130,8 @@ li:hover {
         background-color: rgba(250, 250, 250, 0.016);
         box-shadow: var(--shadow-boxs);
         transition: ease all 1s;
+        position: fixed;
+        margin-top: 4rem;
 
 
     }
@@ -299,6 +304,13 @@ li:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    top: 50%;
+    left: 50%;
+   
+    z-index: 8;
+   
+    
 }
 
 
@@ -415,15 +427,28 @@ li:hover {
 /* ============================================================== */
 /* ======================= END SECCION PROYECTOS ======================= */
 /* ============================================================== */
+
 #section-proyects {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 2rem;
-    padding: 2rem 1rem 5rem 1rem;
+    
+    padding: 2rem 1rem 1rem 1rem;
+    background-image: url(../img/fondoForBlur.png);
 
+    
+
+}
+@media screen and (min-width: 768px){
+    #section-proyects{
+
+
+        margin-bottom: 2rem;
+        padding: 2rem 1rem 5rem 1rem;
+    }
+    
 }
 
 /* .div-project-card-container {
